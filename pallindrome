@@ -5,7 +5,7 @@ def isPalindrome(x):
     orig = x
     while x != 0:
         digit = x % 10
-        temp = temp * 10 + digit
+        temp = temp * 10 + digit       ##can be written as temp = temp * 10 + (x % 10) without assigning digit
         x //= 10
          
     if temp == orig:
