@@ -1,0 +1,21 @@
+def isPalindrome(x):
+    if x < 0 or (x != 0 and x % 10 == 0):
+        return False
+    temp = 0
+    orig = x
+    while x != 0:
+        digit = x % 10
+        temp = temp * 10 + digit
+        x //= 10
+         
+    if temp == orig:
+        return True
+    return False
+
+print(isPalindrome(5256))
+
+
+
+
+
+
